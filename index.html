@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris!</title>
+    <link href="images/tetris.png" rel="icon" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div class="menu-content">
+          <h2 class="t-ucase">rules</h2>
+          <p class="rules">
+            Please use the <b class="key">UP</b> key to rotate your tetromino,
+            and <b class="key">LEFT</b> and <b class="key">RIGHT</b> to <br />
+            move across the board. Pressing <b class="key">DOWN</b> will speed
+            up the tetromino.
+          </p>
+          <button class="close fw-400">X</button>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <h1 class="fw-300 t-ucase">
+        <span class="fw-400 t-wide t-big t-ucase">TETRIS</span><br />
+        Let's play
+      </h1>
+    </header>
+    <main class="game-area">
+      <div class="game">
+        <div class="grid"></div>
+      </div>
+      <section>
+        <div class="display">
+          <h1 class="score fw-400 t-ucase">
+            Score <br />
+            <span class="score-display t-ucase fw-300">0</span>
+          </h1>
+          <div class="previous-shape">
+            <div class="previous-grid"></div>
+          </div>
+          <h2 class="lines-display fw-400 t-ucase">
+            Lines:<span class="lines-score">0</span>
+          </h2>
+        </div>
+        <button class="button t-ucase">Start / Pause</button>
+        <button class="button t-ucase" id="restart">Play again!</button>
+        <div class="wrap-instr">
+          <span><i class="fas fa-arrow-alt-circle-left"></i> Left |</span>
+          <span><i class="fas fa-arrow-alt-circle-right"></i> Right |</span>
+          <span><i class="fas fa-arrow-alt-circle-down"></i> Down |</span>
+          <span><i class="fas fa-arrow-alt-circle-up"></i> Rotate</span>
+        </div>
+      </section>
+    </main>
+    <footer class="fw-400">
+      <small class="footer">Dragana 2022</small>
+    </footer>
+
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
